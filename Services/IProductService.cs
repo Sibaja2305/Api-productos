@@ -9,5 +9,7 @@ namespace EjercicioProductos.Services
         Task InsertProduct(Product product);
         Task UpdateProduct(Product product);
         Task DeleteProduct(short C_productId);
+        Task<List<Product>> GetProductsPaged(int pageNumber, int pageSize);
+
     }
 }
